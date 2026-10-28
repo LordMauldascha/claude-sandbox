@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Test suites for bash, zsh and fish (`test/`) and a GitHub Actions workflow running them with shellcheck on Linux and macOS.
+- `CONTRIBUTING.md`, `SECURITY.md` and a bug report issue template.
+
 ## [0.2.0] - 2026-10-28
 
 ### Added

@@ -154,6 +154,7 @@ if [ -n "${BASH_VERSION:-}" ]; then
     elif [ "$COMP_CWORD" -eq 2 ] && [ "${COMP_WORDS[1]}" = "-d" ]; then
       words="$(_claude_sandbox_names)"
     fi
+    # shellcheck disable=SC2207  # mapfile is not available in bash 3.2
     COMPREPLY=($(compgen -W "$words" -- "$cur"))
   }
   complete -F _claude_sandbox_complete claude-sandbox

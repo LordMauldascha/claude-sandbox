@@ -1,0 +1,63 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! For security problems please use the private report described in SECURITY.md instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect and what happened instead? Include exact error messages.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. claude-sandbox -c test
+        2. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: shell
+    attributes:
+      label: Shell
+      options: [bash, zsh, fish]
+    validations:
+      required: true
+  - type: input
+    id: shell-version
+    attributes:
+      label: Shell version
+      description: Output of `bash --version`, `zsh --version` or `fish --version`.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15, Ubuntu 24.04, WSL2, ...
+    validations:
+      required: true
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: How did you install it?
+      options: [install.sh, git clone, zsh plugin manager, other]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: claude-sandbox version
+      description: Release tag or commit.
+      placeholder: v0.2.0
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Prompt framework (Starship, Powerlevel10k, ...), custom `CLAUDE_SANDBOX_ROOT`, related config.
