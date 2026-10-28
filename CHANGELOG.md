@@ -5,13 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.0](https://github.com/LordMauldascha/claude-sandbox/releases/tag/v0.2.0) - 2026-10.28
+## [Unreleased]
+
+## [0.2.0] - 2026-10-28
 
 ### Added
 
 - `install.sh` to install a release with one command (`--version`, `--shell`, `--modify-rc`).
 
-## [0.1.0](https://github.com/LordMauldascha/claude-sandbox/releases/tag/v0.1.0) - 2026-10-28
+## [0.1.0] - 2026-10-28
 
 ### Added
 
@@ -25,3 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bash (3.2+) and zsh support in `shell/claude-sandbox.sh`, fish support in `shell/claude-sandbox.fish`.
 - `claude-sandbox.plugin.zsh` entry point for zsh plugin managers.
 - `CLAUDE_SANDBOX_ROOT` to change the sandbox directory (default: `~/claude-sandbox`).
+
+[Unreleased]: https://github.com/LordMauldascha/claude-sandbox/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/LordMauldascha/claude-sandbox/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/LordMauldascha/claude-sandbox/releases/tag/v0.1.0
