@@ -23,6 +23,22 @@ $ claude                                 # back to your real config
 
 `claude-sandbox` is a shell function, not a standalone program. A child process cannot change its parent shell's environment, so the function has to be loaded into your shell (the same reason `nvm` or `conda activate` work this way).
 
+### Quick install
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/LordMauldascha/claude-sandbox/main/install.sh | sh
+```
+
+This installs the latest release to `~/.local/share/claude-sandbox` and prints the one line you need to add to your shell startup file. Nothing outside the install directory is touched unless you add `--modify-rc`, which appends that line for you (for fish it links the file into `~/.config/fish/conf.d`). It is safe to run again to update:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/LordMauldascha/claude-sandbox/main/install.sh | sh -s -- --modify-rc
+```
+
+Other options: `--version <tag>` pins a release (or `main` for the development version) and `--shell bash|zsh|fish` overrides the detected shell. If you would rather read the script first, it is [`install.sh`](install.sh).
+
+### Manual install
+
 Clone the repository once:
 
 ```sh
